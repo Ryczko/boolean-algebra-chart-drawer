@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="content">
+        <div class="top">
+            <div class="instructions">
+                <p>Zmienne: p, q, r</p>
+                <p>! zaprzeczenie</p>
+                <p> + suma logiczna</p>
+                <p> * iloczyn logiczny</p>
+                <p> = równość</p>
+            </div>
+            <div class="enter-value">
+                <label>Wprowadź wyrażenie:
+                    <input type="text" class="expression" spellcheck="false">
+                </label>
+                <button class="checkBtn" disabled>Start</button>
+                <button class="resetBtn">Reset</button>
+                <label for="time" class="time">czas stanu (ms)</label>
+                <select id="time">
+                    <option value=25>25</option>
+                    <option value=50>50</option>
+                    <option value=100>100</option>
+                    <option value=250>250</option>
+                    <option value=500 selected>500</option>
+                    <option value=1000>1000</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="chart-field">
+
+            <div class="chart">
+                <div class="line p">
+                    <div class="state-name">p</div>
+                </div>
+                <div class="line q">
+                    <div class="state-name">q</div>
+                </div>
+                <div class="line r">
+                    <div class="state-name">r</div>
+                </div>
+                <div class="line result">
+                    <div class="state-name">y</div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="error">
+            Błędne wyrażenie
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
